@@ -1,0 +1,42 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.Id3 
+Relation:     Glass-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+Instances:    214
+Attributes:   10
+              RI
+              Na
+              Mg
+              Al
+              Si
+              K
+              Ca
+              Ba
+              Fe
+              Type
+Test mode:    split 50.0% train, remainder test
+
+=== Summary ===
+
+Correctly Classified Instances          73               68.2243 %
+Incorrectly Classified Instances        30               28.0374 %
+Kappa statistic                          0.5951
+Mean absolute error                      0.0933
+Root mean squared error                  0.2638
+Relative absolute error                 45.5162 %
+Root relative squared error             83.369  %
+UnClassified Instances                   4                3.7383 %
+Total Number of Instances              107     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.774    0.153    0.686      0.774    0.727      0.602    0.866     0.663     build wind float
+                 0.682    0.102    0.833      0.682    0.750      0.602    0.829     0.746     build wind non-float
+                 0.429    0.083    0.273      0.429    0.333      0.281    0.745     0.198     vehic wind float
+                 ?        0.000    ?          ?        ?          ?        ?         ?         vehic wind non-float
+                 0.800    0.031    0.571      0.800    0.667      0.657    0.885     0.466     containers
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.037     tableware
+                 0.857    0.022    0.857      0.857    0.857      0.835    0.889     0.714     headlamps
+Weighted Avg.    0.709    0.100    ?          0.709    ?          ?        0.839     0.652     
+

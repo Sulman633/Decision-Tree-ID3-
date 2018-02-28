@@ -1,0 +1,40 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     Glass
+Instances:    214
+Attributes:   10
+              RI
+              Na
+              Mg
+              Al
+              Si
+              K
+              Ca
+              Ba
+              Fe
+              Type
+Test mode:    4-fold cross-validation
+
+=== Summary ===
+
+Correctly Classified Instances         143               66.8224 %
+Incorrectly Classified Instances        71               33.1776 %
+Kappa statistic                          0.5461
+Mean absolute error                      0.1026
+Root mean squared error                  0.2938
+Relative absolute error                 48.4249 %
+Root relative squared error             90.5165 %
+Total Number of Instances              214     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.686    0.188    0.640      0.686    0.662      0.490    0.774     0.585     build wind float
+                 0.658    0.188    0.658      0.658    0.658      0.469    0.739     0.595     build wind non-float
+                 0.353    0.036    0.462      0.353    0.400      0.359    0.650     0.239     vehic wind float
+                 ?        0.000    ?          ?        ?          ?        ?         ?         vehic wind non-float
+                 0.538    0.020    0.636      0.538    0.583      0.561    0.743     0.350     containers
+                 0.889    0.010    0.800      0.889    0.842      0.836    0.940     0.716     tableware
+                 0.828    0.027    0.828      0.828    0.828      0.801    0.908     0.755     headlamps
+Weighted Avg.    0.668    0.136    0.664      0.668    0.665      0.533    0.775     0.575 
