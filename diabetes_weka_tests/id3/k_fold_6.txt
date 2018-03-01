@@ -1,0 +1,35 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.Id3 
+Relation:     pima_diabetes-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+Instances:    768
+Attributes:   9
+              preg
+              plas
+              pres
+              skin
+              insu
+              mass
+              pedi
+              age
+              class
+Test mode:    6-fold cross-validation
+
+=== Summary ===
+
+Correctly Classified Instances         585               76.1719 %
+Incorrectly Classified Instances       180               23.4375 %
+Kappa statistic                          0.4537
+Mean absolute error                      0.2931
+Root mean squared error                  0.4242
+Relative absolute error                 64.7372 %
+Root relative squared error             89.1643 %
+UnClassified Instances                   3                0.3906 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.880    0.449    0.785      0.880    0.830      0.461    0.789     0.847     tested_negative
+                 0.551    0.120    0.710      0.551    0.620      0.461    0.789     0.652     tested_positive
+Weighted Avg.    0.765    0.335    0.759      0.765    0.756      0.461    0.789     0.779     
