@@ -15,6 +15,188 @@ Attributes:   9
               class
 Test mode:    4-fold cross-validation
 
+=== Classifier model (full training set) ===
+
+Id3
+
+
+plas = '(-inf-99.5]'
+|  mass = '(-inf-27.85]'
+|  |  insu = '(-inf-14.5]': tested_negative
+|  |  insu = '(14.5-121]': tested_negative
+|  |  insu = '(121-inf)'
+|  |  |  preg = '(-inf-6.5]': tested_negative
+|  |  |  preg = '(6.5-inf)': tested_positive
+|  mass = '(27.85-inf)'
+|  |  insu = '(-inf-14.5]'
+|  |  |  age = '(-inf-28.5]'
+|  |  |  |  pedi = '(-inf-0.5275]': tested_negative
+|  |  |  |  pedi = '(0.5275-inf)': tested_negative
+|  |  |  age = '(28.5-inf)'
+|  |  |  |  pedi = '(-inf-0.5275]'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_negative
+|  |  |  |  |  preg = '(6.5-inf)': tested_negative
+|  |  |  |  pedi = '(0.5275-inf)'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_positive
+|  |  |  |  |  preg = '(6.5-inf)': tested_negative
+|  |  insu = '(14.5-121]'
+|  |  |  preg = '(-inf-6.5]'
+|  |  |  |  age = '(-inf-28.5]'
+|  |  |  |  |  pedi = '(-inf-0.5275]': tested_negative
+|  |  |  |  |  pedi = '(0.5275-inf)': tested_negative
+|  |  |  |  age = '(28.5-inf)': tested_negative
+|  |  |  preg = '(6.5-inf)'
+|  |  |  |  pedi = '(-inf-0.5275]': tested_negative
+|  |  |  |  pedi = '(0.5275-inf)': tested_negative
+|  |  insu = '(121-inf)'
+|  |  |  pedi = '(-inf-0.5275]'
+|  |  |  |  age = '(-inf-28.5]': tested_negative
+|  |  |  |  age = '(28.5-inf)': tested_negative
+|  |  |  pedi = '(0.5275-inf)': tested_positive
+plas = '(99.5-127.5]'
+|  age = '(-inf-28.5]'
+|  |  mass = '(-inf-27.85]'
+|  |  |  pedi = '(-inf-0.5275]': tested_negative
+|  |  |  pedi = '(0.5275-inf)'
+|  |  |  |  insu = '(-inf-14.5]': tested_negative
+|  |  |  |  insu = '(14.5-121]': tested_negative
+|  |  |  |  insu = '(121-inf)': tested_negative
+|  |  mass = '(27.85-inf)'
+|  |  |  insu = '(-inf-14.5]'
+|  |  |  |  preg = '(-inf-6.5]'
+|  |  |  |  |  pedi = '(-inf-0.5275]': tested_negative
+|  |  |  |  |  pedi = '(0.5275-inf)': tested_negative
+|  |  |  |  preg = '(6.5-inf)': tested_positive
+|  |  |  insu = '(14.5-121]'
+|  |  |  |  pedi = '(-inf-0.5275]': tested_negative
+|  |  |  |  pedi = '(0.5275-inf)': tested_negative
+|  |  |  insu = '(121-inf)'
+|  |  |  |  pedi = '(-inf-0.5275]': tested_negative
+|  |  |  |  pedi = '(0.5275-inf)': tested_negative
+|  age = '(28.5-inf)'
+|  |  insu = '(-inf-14.5]'
+|  |  |  mass = '(-inf-27.85]'
+|  |  |  |  pedi = '(-inf-0.5275]'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_negative
+|  |  |  |  |  preg = '(6.5-inf)': tested_negative
+|  |  |  |  pedi = '(0.5275-inf)'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_negative
+|  |  |  |  |  preg = '(6.5-inf)': tested_negative
+|  |  |  mass = '(27.85-inf)'
+|  |  |  |  preg = '(-inf-6.5]'
+|  |  |  |  |  pedi = '(-inf-0.5275]': tested_negative
+|  |  |  |  |  pedi = '(0.5275-inf)': tested_negative
+|  |  |  |  preg = '(6.5-inf)'
+|  |  |  |  |  pedi = '(-inf-0.5275]': tested_negative
+|  |  |  |  |  pedi = '(0.5275-inf)': tested_positive
+|  |  insu = '(14.5-121]'
+|  |  |  pedi = '(-inf-0.5275]'
+|  |  |  |  preg = '(-inf-6.5]': tested_negative
+|  |  |  |  preg = '(6.5-inf)'
+|  |  |  |  |  mass = '(-inf-27.85]': tested_negative
+|  |  |  |  |  mass = '(27.85-inf)': tested_negative
+|  |  |  pedi = '(0.5275-inf)'
+|  |  |  |  mass = '(-inf-27.85]': tested_negative
+|  |  |  |  mass = '(27.85-inf)'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_negative
+|  |  |  |  |  preg = '(6.5-inf)': tested_positive
+|  |  insu = '(121-inf)'
+|  |  |  pedi = '(-inf-0.5275]'
+|  |  |  |  mass = '(-inf-27.85]': tested_negative
+|  |  |  |  mass = '(27.85-inf)'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_negative
+|  |  |  |  |  preg = '(6.5-inf)': tested_negative
+|  |  |  pedi = '(0.5275-inf)'
+|  |  |  |  mass = '(-inf-27.85]': tested_negative
+|  |  |  |  mass = '(27.85-inf)'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_positive
+|  |  |  |  |  preg = '(6.5-inf)': tested_positive
+plas = '(127.5-154.5]'
+|  mass = '(-inf-27.85]'
+|  |  insu = '(-inf-14.5]'
+|  |  |  age = '(-inf-28.5]': tested_negative
+|  |  |  age = '(28.5-inf)'
+|  |  |  |  pedi = '(-inf-0.5275]'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_negative
+|  |  |  |  |  preg = '(6.5-inf)': tested_negative
+|  |  |  |  pedi = '(0.5275-inf)': tested_negative
+|  |  insu = '(14.5-121]'
+|  |  |  pedi = '(-inf-0.5275]'
+|  |  |  |  preg = '(-inf-6.5]': tested_negative
+|  |  |  |  preg = '(6.5-inf)': tested_negative
+|  |  |  pedi = '(0.5275-inf)'
+|  |  |  |  preg = '(-inf-6.5]': tested_negative
+|  |  |  |  preg = '(6.5-inf)': tested_positive
+|  |  insu = '(121-inf)': tested_negative
+|  mass = '(27.85-inf)'
+|  |  age = '(-inf-28.5]'
+|  |  |  insu = '(-inf-14.5]'
+|  |  |  |  pedi = '(-inf-0.5275]': tested_negative
+|  |  |  |  pedi = '(0.5275-inf)': tested_positive
+|  |  |  insu = '(14.5-121]': tested_negative
+|  |  |  insu = '(121-inf)'
+|  |  |  |  pedi = '(-inf-0.5275]': tested_negative
+|  |  |  |  pedi = '(0.5275-inf)': tested_negative
+|  |  age = '(28.5-inf)'
+|  |  |  pedi = '(-inf-0.5275]'
+|  |  |  |  insu = '(-inf-14.5]'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_negative
+|  |  |  |  |  preg = '(6.5-inf)': tested_positive
+|  |  |  |  insu = '(14.5-121]'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_positive
+|  |  |  |  |  preg = '(6.5-inf)': tested_negative
+|  |  |  |  insu = '(121-inf)'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_positive
+|  |  |  |  |  preg = '(6.5-inf)': tested_positive
+|  |  |  pedi = '(0.5275-inf)'
+|  |  |  |  insu = '(-inf-14.5]'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_positive
+|  |  |  |  |  preg = '(6.5-inf)': tested_positive
+|  |  |  |  insu = '(14.5-121]': tested_positive
+|  |  |  |  insu = '(121-inf)'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_positive
+|  |  |  |  |  preg = '(6.5-inf)': tested_positive
+plas = '(154.5-inf)'
+|  mass = '(-inf-27.85]'
+|  |  age = '(-inf-28.5]'
+|  |  |  insu = '(-inf-14.5]': tested_negative
+|  |  |  insu = '(14.5-121]': tested_positive
+|  |  |  insu = '(121-inf)': tested_negative
+|  |  age = '(28.5-inf)'
+|  |  |  insu = '(-inf-14.5]'
+|  |  |  |  pedi = '(-inf-0.5275]'
+|  |  |  |  |  preg = '(-inf-6.5]': tested_negative
+|  |  |  |  |  preg = '(6.5-inf)': tested_negative
+|  |  |  |  pedi = '(0.5275-inf)': tested_positive
+|  |  |  insu = '(14.5-121]': null
+|  |  |  insu = '(121-inf)': tested_positive
+|  mass = '(27.85-inf)'
+|  |  preg = '(-inf-6.5]'
+|  |  |  insu = '(-inf-14.5]'
+|  |  |  |  age = '(-inf-28.5]': tested_positive
+|  |  |  |  age = '(28.5-inf)'
+|  |  |  |  |  pedi = '(-inf-0.5275]': tested_positive
+|  |  |  |  |  pedi = '(0.5275-inf)': tested_positive
+|  |  |  insu = '(14.5-121]'
+|  |  |  |  pedi = '(-inf-0.5275]': tested_negative
+|  |  |  |  pedi = '(0.5275-inf)': tested_positive
+|  |  |  insu = '(121-inf)'
+|  |  |  |  age = '(-inf-28.5]'
+|  |  |  |  |  pedi = '(-inf-0.5275]': tested_positive
+|  |  |  |  |  pedi = '(0.5275-inf)': tested_positive
+|  |  |  |  age = '(28.5-inf)'
+|  |  |  |  |  pedi = '(-inf-0.5275]': tested_positive
+|  |  |  |  |  pedi = '(0.5275-inf)': tested_positive
+|  |  preg = '(6.5-inf)'
+|  |  |  insu = '(-inf-14.5]'
+|  |  |  |  pedi = '(-inf-0.5275]': tested_positive
+|  |  |  |  pedi = '(0.5275-inf)': tested_positive
+|  |  |  insu = '(14.5-121]': tested_positive
+|  |  |  insu = '(121-inf)': tested_positive
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
 === Summary ===
 
 Correctly Classified Instances         599               77.9948 %
@@ -32,4 +214,11 @@ Total Number of Instances              768
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
                  0.902    0.438    0.793      0.902    0.844      0.503    0.796     0.844     tested_negative
                  0.562    0.098    0.754      0.562    0.644      0.503    0.796     0.675     tested_positive
-Weighted Avg.    0.783    0.320    0.779      0.783    0.774      0.503    0.796     0.785
+Weighted Avg.    0.783    0.320    0.779      0.783    0.774      0.503    0.796     0.785     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 449  49 |   a = tested_negative
+ 117 150 |   b = tested_positive
+

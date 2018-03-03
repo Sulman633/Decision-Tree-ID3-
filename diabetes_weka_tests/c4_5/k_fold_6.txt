@@ -1,7 +1,7 @@
 === Run information ===
 
 Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
-Relation:     pima_diabetes
+Relation:     pima_diabetes-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
 Instances:    768
 Attributes:   9
               preg
@@ -15,20 +15,62 @@ Attributes:   9
               class
 Test mode:    6-fold cross-validation
 
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+plas = '(-inf-99.5]': tested_negative (197.0/16.0)
+plas = '(99.5-127.5]'
+|   age = '(-inf-28.5]': tested_negative (143.0/17.0)
+|   age = '(28.5-inf)'
+|   |   insu = '(-inf-14.5]'
+|   |   |   mass = '(-inf-27.85]': tested_negative (32.0/9.0)
+|   |   |   mass = '(27.85-inf)'
+|   |   |   |   preg = '(-inf-6.5]': tested_negative (36.0/15.0)
+|   |   |   |   preg = '(6.5-inf)': tested_positive (26.0/9.0)
+|   |   insu = '(14.5-121]': tested_negative (22.0/3.0)
+|   |   insu = '(121-inf)'
+|   |   |   pedi = '(-inf-0.5275]': tested_negative (13.0/5.0)
+|   |   |   pedi = '(0.5275-inf)'
+|   |   |   |   mass = '(-inf-27.85]': tested_negative (3.0/1.0)
+|   |   |   |   mass = '(27.85-inf)': tested_positive (13.0/2.0)
+plas = '(127.5-154.5]'
+|   mass = '(-inf-27.85]': tested_negative (34.0/5.0)
+|   mass = '(27.85-inf)'
+|   |   age = '(-inf-28.5]': tested_negative (48.0/20.0)
+|   |   age = '(28.5-inf)': tested_positive (79.0/28.0)
+plas = '(154.5-inf)': tested_positive (122.0/24.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	22
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
 === Summary ===
 
-Correctly Classified Instances         567               73.8281 %
-Incorrectly Classified Instances       201               26.1719 %
-Kappa statistic                          0.4205
-Mean absolute error                      0.3067
-Root mean squared error                  0.4377
-Relative absolute error                 67.477  %
-Root relative squared error             91.8318 %
+Correctly Classified Instances         596               77.6042 %
+Incorrectly Classified Instances       172               22.3958 %
+Kappa statistic                          0.4966
+Mean absolute error                      0.3064
+Root mean squared error                  0.4009
+Relative absolute error                 67.4198 %
+Root relative squared error             84.1099 %
 Total Number of Instances              768     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.806    0.388    0.795      0.806    0.800      0.421    0.762     0.812     tested_negative
-                 0.612    0.194    0.628      0.612    0.620      0.421    0.762     0.591     tested_positive
-Weighted Avg.    0.738    0.320    0.737      0.738    0.737      0.421    0.762     0.735     
+                 0.852    0.366    0.813      0.852    0.832      0.498    0.807     0.856     tested_negative
+                 0.634    0.148    0.697      0.634    0.664      0.498    0.807     0.674     tested_positive
+Weighted Avg.    0.776    0.290    0.772      0.776    0.773      0.498    0.807     0.792     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 426  74 |   a = tested_negative
+  98 170 |   b = tested_positive
+
